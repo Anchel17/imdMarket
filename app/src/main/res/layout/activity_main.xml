@@ -31,7 +31,7 @@
         android:textSize="20sp"/>
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/login_field"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -53,16 +53,16 @@
         android:textSize="20sp"/>
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/password_field"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
         android:ems="10"
-        android:inputType="textPassword"
         android:hint="@string/senha_hint"
-        android:textSize="15sp"
+        android:inputType="textPassword"
         android:textColorHint="@color/grey"
-        android:layout_marginTop="10dp"/>
+        android:textSize="15sp" />
 
     <Button
         android:id="@+id/btn_entrar"

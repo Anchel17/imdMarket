@@ -45,12 +45,12 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/create_cod_produto_field"
         android:layout_width="371dp"
         android:layout_height="40dp"
         android:layout_marginTop="4dp"
         android:ems="10"
-        android:inputType="text"
+        android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
@@ -63,10 +63,10 @@
         android:layout_marginTop="24dp"
         android:text="@string/create_update_nome_produto"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintTop_toBottomOf="@+id/create_cod_produto_field" />
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/create_nome_prod_field"
         android:layout_width="371dp"
         android:layout_height="40dp"
         android:layout_marginTop="4dp"
@@ -84,15 +84,15 @@
         android:layout_marginTop="24dp"
         android:text="@string/create_update_descricao_produto"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
+        app:layout_constraintTop_toBottomOf="@+id/create_nome_prod_field" />
 
     <EditText
-        android:id="@+id/editTextText5"
+        android:id="@+id/create_desc_prod_field"
         android:layout_width="371dp"
         android:layout_height="40dp"
         android:layout_marginTop="4dp"
         android:ems="10"
-        android:inputType="text"
+        android:inputType="textMultiLine"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
@@ -105,15 +105,15 @@
         android:layout_marginTop="24dp"
         android:text="@string/create_update_estoque_produto"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText5" />
+        app:layout_constraintTop_toBottomOf="@+id/create_desc_prod_field" />
 
     <EditText
-        android:id="@+id/editTextText6"
+        android:id="@+id/create_estq_field"
         android:layout_width="371dp"
         android:layout_height="40dp"
         android:layout_marginTop="4dp"
         android:ems="10"
-        android:inputType="text"
+        android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
@@ -128,7 +128,7 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText6"
+        app:layout_constraintTop_toBottomOf="@+id/create_estq_field"
         app:layout_constraintVertical_bias="0.104" />
 
     <Button
@@ -142,7 +142,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.299"
         app:layout_constraintStart_toEndOf="@+id/btnSaveAlteracao"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText6"
+        app:layout_constraintTop_toBottomOf="@+id/create_estq_field"
         app:layout_constraintVertical_bias="0.104" />
 
 
