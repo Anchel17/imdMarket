@@ -1,5 +1,6 @@
 package com.example.imdmarket
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -31,6 +32,12 @@ class MainActivity : ComponentActivity() {
     private fun isLoginAndPasswordValid():Boolean{
         loginText = findViewById<EditText>(R.id.login_field);
         passwordText = findViewById<EditText>(R.id.password_field);
+
+        val sharedPreferences = getSharedPreferences("LOGIN_PREFERENCES", Context.MODE_PRIVATE);
+        var editor = sharedPreferences.edit();
+        editor.putString("Login", loginText.text.toString());
+        editor.putString("Senha", passwordText.text.toString());
+        editor.apply();
 
         return loginText.text.toString() =="admin" && passwordText.text.toString() == "admin";
     }
